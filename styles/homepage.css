@@ -1,0 +1,26 @@
+
+body
+{
+  background-color: black;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+.justify-content-center {
+    justify-content: center;
+}
+.flex {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+h1{text-align: center;}
+h2{text-align: center;}
+
+.box {
+    width: 500;
+    height: 500;
+
+    background-color: rgb(87, 87, 87);
+    border: 2px solid rgb(184, 184, 184);
+}

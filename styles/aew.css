@@ -1,0 +1,178 @@
+
+body
+{background-color:hsl(44, 54%, 47%);
+font-family: Arial, Helvetica, sans-serif;
+--hue: 44;
+--main-colour: hsl(var(--hue), 100%, 66%);
+--dark-colour: hsl(var(--hue), 100%, 28%);
+color: rgb(201, 201, 201);
+text-shadow: 2px 2px black;
+}
+
+.container 
+{
+    position: relative;
+    text-align: center;
+
+    color: rgb(203, 203, 203);
+    background-color: var(--dark-colour);
+}
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    gap: 80px;
+    padding: 20px;
+
+}
+
+nav a
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+.flexbox
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+    gap: 75px;
+    
+}
+
+header {
+    position:sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 40px;
+    gap: 40px;
+}
+
+.two-wide {
+    grid-column: span 2;
+}
+
+h1{
+    text-align: center;
+}
+
+.three-col {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5px;
+    gap: 10px;
+
+}
+.box
+{
+    width: auto;
+    height: auto;
+    align-items: center;
+    background-color: var(--main-colour);
+    color: rgb(203, 203, 203);
+    
+    
+}
+
+.table {
+    display: grid;
+    grid-template-rows: 1fr, auto;
+    background-color: var(--main-colour);
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    background-color: var(--main-colour);
+    border-radius: 20px;
+
+    padding: 2em;
+
+    border: 2px solid var(--dark-colour);
+    box-shadow: 10px 8px  hsl(var(--hue), 100%, 10%);
+    position: relative;
+}
+
+.header{background-color: black;}
+
+.card p
+{
+    font-size: 24px;
+}
+
+.flexbox a
+{
+    text-decoration:underline;
+    font-style: italic;
+    color: rgb(201, 201, 201);
+
+
+}
+
+.flexbox .box
+{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+* {box-sizing:border-box}
+
+.card h2{text-align: center;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
