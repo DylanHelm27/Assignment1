@@ -1,22 +1,25 @@
+/* Roboto Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Body styles */
 body
-{background-color:#FA1700;
+{background-color:#0062ff;
 font-family: "Roboto",sans-serif;
---hue: 0;
+--hue: 217;
 --main-colour: hsl(var(--hue), 100%, 66%);
 --dark-colour: hsl(var(--hue), 100%, 28%);
 }
 
+/* Container styles */
 .container 
 {
     position: relative;
     text-align: center;
-
     color: white;
     background-color: var(--dark-colour);
 }
 
+/* Nav styles */
 nav
 {
     display: flex;
@@ -24,31 +27,32 @@ nav
     background-color: black;
     gap: 80px;
     padding: 20px;
-
 }
 
+/* Links in Nav styles */
 nav a
 {
     color: white;
     text-decoration: none;
 }
 
-
+/* Flexbox styles */
 .flexbox
 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly ;
     gap: 75px;
-    
 }
 
+/* Header style */
 header {
     position:sticky;
     top: 0px;
     z-index: 100;
 }
 
+/* Grid Styles */
 .grid {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -56,20 +60,24 @@ header {
     gap: 40px;
 }
 
+/* two wide for grid styles */
 .two-wide {
     grid-column: span 2;
 }
 
+/* H1 styles */
 h1{
     text-align: center;
 }
 
+/* three columned grid styles */
 .three-col {
     grid-template-columns: 1fr 1fr 1fr;
     margin: 10px;
     gap: 10px;
-
 }
+
+/* box styles */
 .box
 {
     width: auto;
@@ -80,6 +88,7 @@ h1{
     
 }
 
+/* Table styles */
 .table {
     display: grid;
     grid-template-rows: 1fr, auto;
@@ -87,7 +96,7 @@ h1{
     color: white;
 }
 
-
+/* Centering style */
 .centered {
     position: absolute;
     top: 50%;
@@ -95,25 +104,27 @@ h1{
     transform: translate(-50%, -50%);
 }
 
+/* Card Styles */
 .card {
     background-color: var(--main-colour);
     border-radius: 20px;
-
     padding: 2em;
-
     border: 2px solid var(--dark-colour);
     box-shadow: 10px 8px  hsl(var(--hue), 100%, 10%);
     color: white;
     position: relative;
 }
 
+/* Header Styles */
 .header{background-color: black;}
 
+/* Paragraph tags in Cards styles */
 .card p
 {
     font-size: 24px;
 }
 
+/* Links in Flexbox styles*/
 .flexbox a
 {
     text-decoration:underline;
@@ -121,6 +132,7 @@ h1{
     font-style: italic;
 }
 
+/* Boxes in flexboxes styles*/
 .flexbox .box
 {
     width: 100%;
@@ -130,10 +142,18 @@ h1{
     
 }
 
+/* Footer Styles */
+footer
+{
+    color: white;
+    text-align: center;
+    background-color: var(--dark-colour);
+}
+
+/* Heading2 in Cards Styles */
+.card h2{text-align: center;}
 
 * {box-sizing:border-box}
-
-.card h2{text-align: center;}
 
 /* Slideshow container */
 .slideshow-container {
@@ -146,8 +166,6 @@ h1{
 .mySlides {
   display: none;
 }
-
-
 
 /* Number text (1/3 etc) */
 .numbertext {
